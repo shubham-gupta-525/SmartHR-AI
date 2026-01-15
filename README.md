@@ -1,67 +1,59 @@
 SmartHR AI
+AI-Powered Human Resource Management System
+🔹 Overview
 
-SmartHR AI is a web-based Human Resource Management System enhanced with Artificial Intelligence to automate employee management, resume screening, interview preparation, and HR support.
-The system is designed to reduce manual HR workload, improve hiring efficiency, and provide intelligent decision support.
+➡ SmartHR AI is a web-based HR Management System enhanced with Artificial Intelligence
+➡ Automates employee management, resume screening, interview preparation, and HR support
+➡ Designed to reduce manual workload, improve hiring efficiency, and enable intelligent decision-making
 
 📌 Problem Overview
 
-HR teams often rely on manual or semi-automated processes to manage employees, screen resumes, and handle repetitive HR queries. These processes are time-consuming, error-prone, and inefficient, especially when dealing with large volumes of candidate data and employee records.
+➡ HR teams rely on manual or semi-automated processes
+➡ Managing employee data is time-consuming and error-prone
+➡ Resume screening involves hundreds or thousands of profiles
+➡ Repetitive HR queries reduce productivity and efficiency
+➡ Lack of intelligent automation delays hiring decisions
 
-SmartHR AI addresses these challenges by providing a centralized, AI-driven platform for modern HR operations.
+➡ SmartHR AI solves these challenges through a centralized, AI-driven HR platform
 
 🚀 Key Features
+➤ Employee Management System
 
-Employee Management System
+➡ Add, view, filter, and delete employee records
+➡ Centralized and structured employee data management
 
-Add, view, filter, and delete employee records
+➤ AI Resume Ranker
 
-Centralized and structured employee data management
+➡ Upload 10–15 resumes simultaneously
+➡ Automatically ranks resumes based on job description relevance
+➡ Reduces manual screening of hundreds of resumes
 
-AI Resume Ranker
+➤ HR Assistant Chatbot
 
-Upload multiple resumes simultaneously (10–15 at a time)
+➡ AI-powered chatbot using Groq API
+➡ Answers HR-related queries instantly
+➡ Suggests role-specific interview questions
 
-Automatically ranks resumes based on job description relevance
+➤ Interview Assistance
 
-Reduces manual screening of hundreds of resumes
+➡ Helps HR prepare consistent and relevant interview questions
+➡ Reduces dependency on manual preparation
 
-HR Assistant Chatbot
+➤ Secure & Scalable Backend
 
-AI-powered chatbot using Groq API
-
-Answers HR-related queries instantly
-
-Suggests role-specific interview questions
-
-Interview Assistance
-
-Helps HR prepare consistent and relevant interview questions
-
-Reduces dependency on manual preparation
-
-Secure & Scalable Backend
-
-Environment-based API key management
-
-Modular and maintainable architecture
+➡ Environment-based API key management
+➡ Modular, maintainable, and scalable architecture
 
 🛠 Technology Stack
 
-Python – Core backend logic
-
-Django – Web framework for application development
-
-Django REST Framework (DRF) – API layer for AI services
-
-HTML – Frontend structure
-
-Bootstrap – Responsive UI design
-
-Groq API – AI chatbot and language model integration
-
-SQLite – Lightweight database for development
-
-Git & GitHub – Version control and collaboration
+➡ Python – Core backend logic
+➡ Django – Web framework for application development
+➡ Django REST Framework (DRF) – API layer for AI services
+➡ HTML – Frontend structure
+➡ Bootstrap – Responsive UI design
+➡ Groq API – AI chatbot & language model integration
+➡ SQLite – Lightweight database for development
+➡ Git & GitHub – Version control and collaboration
 
 
 🔮 Future Enhancements
