@@ -75,3 +75,7 @@ def filter_emp(request):
     }
 
     return render(request, 'filter_emp.html', context)
+
+def home(request):
+    return render(request, 'home.html')
+

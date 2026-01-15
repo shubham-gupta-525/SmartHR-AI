@@ -16,8 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from ranker.views import ResumeRankView
+from employee import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('employee.urls')),
+    path('ranker/', ResumeRankView.as_view(), name='ranker'),
+    path('chatbot/', include('chatbot.urls')),
 ]

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Ranker AI</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background: radial-gradient(circle at top, #ff8c00, #000);
+            min-height: 100vh;
+        }
+        .neon-card {
+            background: rgba(0, 0, 0, 0.85);
+            box-shadow:
+                0 0 20px rgba(255, 140, 0, 0.8),
+                0 0 40px rgba(255, 140, 0, 0.5);
+            border-radius: 20px;
+        }
+        .neon-text {
+            color: #ff9f1c;
+            text-shadow: 0 0 10px rgba(255, 159, 28, 0.8);
+        }
+        .neon-btn {
+            background: linear-gradient(135deg, #ff9f1c, #ff6a00);
+            color: #000;
+            font-weight: bold;
+            border: none;
+            box-shadow: 0 0 15px rgba(255, 140, 0, 0.8);
+        }
+        .neon-btn:hover {
+            box-shadow: 0 0 25px rgba(255, 140, 0, 1);
+            transform: translateY(-2px);
+        }
+        label {
+            color: #ffb347;
+            font-weight: 600;
+        }
+        input, textarea {
+            background-color: #111 !important;
+            color: #fff !important;
+            border: 1px solid #ff8c00 !important;
+        }
+        input:focus, textarea:focus {
+            box-shadow: 0 0 10px rgba(255, 140, 0, 0.8) !important;
+            border-color: #ff9f1c !important;
+        }
+        .file-count {
+            color: #ff9f1c;
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container d-flex align-items-center justify-content-center">
+    <div class="col-md-8 col-lg-6 mt-5">
+
+        <div class="card neon-card p-4">
+
+            <h2 class="text-center neon-text mb-1">Resume Ranker AI</h2>
+            <p class="text-center text-light mb-4">
+                AI-based Resume Scoring & Ranking System
+            </p>
+
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <div class="mb-3">
+                    <label>Job Role</label>
+                    <input type="text" name="role" class="form-control"
+                           placeholder="e.g. Python Developer">
+                </div>
+
+                <div class="mb-3">
+                    <label>Job Description</label>
+                    <textarea name="description" rows="5" class="form-control"
+                              placeholder="Paste job description here..."></textarea>
+                </div>
+
+                <div class="mb-2">
+                    <label>Upload Resumes (PDF / DOCX)</label>
+                    <input type="file" id="resumeInput" name="resumes"
+                           multiple class="form-control">
+                    <div id="fileCount" class="file-count">
+                        No resumes selected
+                    </div>
+                </div>
+
+                <div class="d-grid mt-4">
+                    <button type="submit" class="btn neon-btn btn-lg rounded-pill">
+                        🚀 Rank Resumes
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+<script>
+    const resumeInput = document.getElementById("resumeInput");
+    const fileCount = document.getElementById("fileCount");
+
+    resumeInput.addEventListener("change", function () {
+        const count = this.files.length;
+        if (count === 0) {
+            fileCount.textContent = "No resumes selected";
+        } else if (count === 1) {
+            fileCount.textContent = "📄 1 resume selected";
+        } else {
+            fileCount.textContent = `📄 ${count} resumes selected`;
+        }
+    });
+</script>
+
+</body>
+</html>
