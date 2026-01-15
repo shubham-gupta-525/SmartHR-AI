@@ -4,8 +4,9 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 import os, json
 
-GROQ_API_KEY = "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"
+from django.conf import settings
 
+GROQ_API_KEY = settings.GROQ_API_KEY
 conversation_history = [
     {"role": "system", "content": "You are a helpful assistant. Always answer in clear bullet points."}
 ]
