@@ -54,3 +54,15 @@ AI-Powered Human Resource Management System
 ➡ Groq API – AI chatbot & language model integration
 ➡ SQLite – Lightweight database for development
 ➡ Git & GitHub – Version control and collaboration
+
+Future Enhancements
+
+Background task scheduling using Celery
+
+Automated salary slip generation
+
+Monthly salary email delivery to employees
+
+HR analytics dashboard
+
+Cloud deployment and multi-tenant SaaS model
