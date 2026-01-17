@@ -3,6 +3,41 @@
 
 ---
 
+How to Run the SmartHR-AI Project (Step-by-Step Guide)
+1. Download and Extract the Project
+•	Download SmartHR-AI-main (ZIP file).
+•	Unzip the file to your desired location.
+•	Open the extracted project folder in VS Code (optional for editing).
+________________________________________
+2. Important Note
+•	Do NOT use the VS Code terminal, because it defaults to PowerShell.
+•	Perform all commands using the Command Prompt (CMD) instead.
+________________________________________
+3. Set Up and Activate the Virtual Environment
+•	Open CMD.
+•	Navigate to the folder where your venv directory is located.
+•	Activate the virtual environment:
+•	venv\Scripts\activate
+________________________________________
+4. Navigate to the Django Project Folder
+•	Move into the main Django app directory:
+•	cd ems_main
+________________________________________
+5. Install Required Dependencies
+•	Install all necessary packages using:
+•	pip install -r requirements.txt
+________________________________________
+6. Run the Django Development Server
+•	Start the server:
+•	python manage.py runserver
+________________________________________
+7. Open the Application in Your Browser
+•	Visit:
+•	http://127.0.0.1:8000/
+•	The SmartHR-AI website should now be visible and running.
+
+
+
 ## 🔹 Overview  
 - SmartHR AI is a web-based HR Management System enhanced with Artificial Intelligence  
 - Automates employee management, resume screening, interview preparation, and HR support  
