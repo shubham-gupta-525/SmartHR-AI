@@ -18,24 +18,26 @@
 - Open **CMD**
 - Go to the folder where your `venv` exists
 - Activate the virtual environment:
+- venv\Scripts\activate
 
-venv\Scripts\activate
-4️⃣ Navigate to the Django Project Folder
-Move inside the Django project directory:
+## 4️⃣ Navigate to the Django Project Folder
+- Move inside the Django project directory:
 
-cd ems_main
-5️⃣ Install Required Dependencies
-Install all required Python packages:
+- cd ems_main
 
-pip install -r requirements.txt
-6️⃣ Run the Django Development Server
-Start the project server:
+## 5️⃣ Install Required Dependencies
+- Install all required Python packages:
 
-python manage.py runserver
-7️⃣ Open the Project in Browser 🌐
-Open this URL in your browser:
+- pip install -r requirements.txt
 
-http://127.0.0.1:8000/
+## 6️⃣ Run the Django Development Server
+- Start the project server:
+
+- python manage.py runserver
+## 7️⃣ Open the Project in Browser 🌐
+- Open this URL in your browser:
+
+- http://127.0.0.1:8000/
 ✅ Your SmartHR AI project should now be running successfully.
 
 ## 🔹 Overview  
