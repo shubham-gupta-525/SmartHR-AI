@@ -2,6 +2,7 @@
 ## AI-Powered Human Resource Management System  
 
 ---
+- I have added sample resumes in resumes folder for checking of Resume Ranker AI
 
 # How to Run the SmartHR-AI Project (Step-by-Step Guide)
 
