@@ -3,40 +3,48 @@
 
 ---
 
-How to Run the SmartHR-AI Project (Step-by-Step Guide)
-1. Download and Extract the Project
-•	Download SmartHR-AI-main (ZIP file).
-•	Unzip the file to your desired location.
-•	Open the extracted project folder in VS Code (optional for editing).
-________________________________________
-2. Important Note
-•	Do NOT use the VS Code terminal, because it defaults to PowerShell.
-•	Perform all commands using the Command Prompt (CMD) instead.
-________________________________________
-3. Set Up and Activate the Virtual Environment
-•	Open CMD.
-•	Navigate to the folder where your venv directory is located.
-•	Activate the virtual environment:
-•	venv\Scripts\activate
-________________________________________
-4. Navigate to the Django Project Folder
-•	Move into the main Django app directory:
-•	cd ems_main
-________________________________________
-5. Install Required Dependencies
-•	Install all necessary packages using:
-•	pip install -r requirements.txt
-________________________________________
-6. Run the Django Development Server
-•	Start the server:
-•	python manage.py runserver
-________________________________________
-7. Open the Application in Your Browser
-•	Visit:
-•	http://127.0.0.1:8000/
-•	The SmartHR-AI website should now be visible and running.
+# How to Run the SmartHR-AI Project (Step-by-Step Guide)
 
+## 1️⃣ Download and Extract the Project
+- Download **SmartHR-AI-main** (ZIP file)
+- Extract / unzip it to your desired location
+- Open the extracted folder in **VS Code** (optional)
 
+## 2️⃣ Important Note ⚠️
+- Do **NOT** use the VS Code terminal, because it defaults to **PowerShell**
+- ✅ Use **Command Prompt (CMD)** for running commands
+
+## 3️⃣ Set Up and Activate Virtual Environment
+- Open **CMD**
+- Go to the folder where your `venv` exists
+- Activate the virtual environment:
+```bash
+venv\Scripts\activate
+4️⃣ Navigate to the Django Project Folder
+Move inside the Django project directory:
+
+bash
+Copy code
+cd ems_main
+5️⃣ Install Required Dependencies
+Install all required Python packages:
+
+bash
+Copy code
+pip install -r requirements.txt
+6️⃣ Run the Django Development Server
+Start the project server:
+
+bash
+Copy code
+python manage.py runserver
+7️⃣ Open the Project in Browser 🌐
+Open this URL in your browser:
+
+text
+Copy code
+http://127.0.0.1:8000/
+✅ Your SmartHR AI project should now be running successfully.
 
 ## 🔹 Overview  
 - SmartHR AI is a web-based HR Management System enhanced with Artificial Intelligence  
