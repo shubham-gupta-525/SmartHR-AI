@@ -1,6 +1,10 @@
 # SmartHR AI  
 ## AI-Powered Human Resource Management System  
+## 🎥 Project Demo Video
 
+📹 **Watch the demo here:**
+
+https://drive.google.com/file/d/1ABBj7bOSv5XY0gWgK60mdZqnXoPMeJuZ/view?usp=drive_link
 ---
 - I have added sample resumes in resumes folder for checking of Resume Ranker AI
 
