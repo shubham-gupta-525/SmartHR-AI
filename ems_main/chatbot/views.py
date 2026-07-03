@@ -39,6 +39,7 @@ def chat(request):
             return JsonResponse({"reply": reply})
         else:
             return JsonResponse({"error": response.text}, status=response.status_code)
+    print("GROQ KEY:", GROQ_API_KEY)
     return render(request, "chatbot.html")
 
 # def bot(request):

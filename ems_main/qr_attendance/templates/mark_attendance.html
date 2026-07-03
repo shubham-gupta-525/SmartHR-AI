@@ -1,0 +1,170 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Scan QR</title>
+
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background: #f4f6f9;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        #reader {
+            width: 600px;      /* 🔥 Increased size */
+            margin: 40px auto;
+        }
+
+        /* Make camera area look cleaner */
+        #reader video {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Scan Your ID Card</h2>
+
+<div id="reader"></div>
+
+<script>
+    function onScanSuccess(decodedText, decodedResult) {
+
+        html5QrcodeScanner.clear();
+
+        window.location.href = `/process-attendance/${decodedText}/`;
+    }
+
+    let html5QrcodeScanner = new Html5QrcodeScanner(
+        "reader",
+        { 
+            fps: 10, 
+            qrbox: 450   // 🔥 Bigger scanning box
+        }
+    );
+
+    html5QrcodeScanner.render(onScanSuccess);
+</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan QR</title>
+
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #f1f5f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .scanner-wrapper {
+            background: white;
+            width: 750px;
+            padding: 30px 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        #reader {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid #e2e8f0;
+        }
+
+        #reader video {
+            border-radius: 12px;
+        }
+
+        .note {
+            margin-top: 18px;
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        .home-btn {
+            margin-top: 25px;
+            padding: 8px 18px;
+            border-radius: 8px;
+            border: none;
+            background: #2563eb;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .home-btn:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 800px) {
+            .scanner-wrapper {
+                width: 95%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="scanner-wrapper">
+
+    <h2>📷 Scan Your ID Card</h2>
+
+    <div id="reader"></div>
+
+    <div class="note">
+        Hold your ID card steady inside the scanning frame
+    </div>
+
+    <button class="home-btn" onclick="window.location.href='/'">
+        Back to Home
+    </button>
+
+</div>
+
+<script>
+    function onScanSuccess(decodedText, decodedResult) {
+        html5QrcodeScanner.clear();
+        window.location.href = `/process-attendance/${decodedText}/`;
+    }
+
+    let html5QrcodeScanner = new Html5QrcodeScanner(
+        "reader",
+        { 
+            fps: 10, 
+            qrbox: 450
+        }
+    );
+
+    html5QrcodeScanner.render(onScanSuccess);
+</script>
+
+</body>
+</html>

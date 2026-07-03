@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Marked</title>
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <style>
+        body {
+            text-align: center;
+            margin-top: 120px;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<h1>✅ Attendance Marked Successfully!</h1>
+<h2>{{ name }}</h2>
+<p>Redirecting to home page...</p>
+
+<script>
+    // 🎉 CONFETTI
+    confetti({
+        particleCount: 200,
+        spread: 100,
+        origin: { y: 0.6 }
+    });
+
+    // 🔁 Redirect after 3 seconds
+    setTimeout(function () {
+        window.location.href = "http://127.0.0.1:8000/att-mang/";
+    }, 3000);
+</script>
+
+</body>
+</html>

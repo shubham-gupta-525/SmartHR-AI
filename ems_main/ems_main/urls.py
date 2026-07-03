@@ -18,11 +18,14 @@ from django.contrib import admin
 from django.urls import path, include
 from ranker.views import ResumeRankView
 from employee import views
+from django.conf.urls.static import static
+from django.conf import settings
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('employee.urls')),
+    path('', include('qr_attendance.urls')),
     path('ranker/', ResumeRankView.as_view(), name='ranker'),
     path('chatbot/', include('chatbot.urls')),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
